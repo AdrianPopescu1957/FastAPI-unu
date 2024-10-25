@@ -92,5 +92,5 @@ app.include_router(voturi1.ruter)  #ruta spre metodele pentru votare (voturi)
 #
 @app.get("/")  #metoda get = preia date din pagina publicata in radacina
 async def vadserver():     # intoarce un semn de la server
-    return {"  Salut, sint serverul main16.py! Este ora: ", datetime.now()}    
+    return {"  Salut, sint serverul main17.py! Este ora: ", datetime.now()}    
 

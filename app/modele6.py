@@ -78,8 +78,8 @@ class User(Baza):   #creaza clasa User de tip Baza, in fapt tabel users in BD
     email = Column(String, nullable=False, unique=True)  #practic numele utilizatorului = email
     parola = Column(String, nullable=False) #parola
     moment = Column (String, nullable=False, server_default=str(datetime.now()))  #momentul creerii
-    telefon = Column(String, nullable=False)
-    telmobil = Column(String, nullable=False)
+#    telefon = Column(String, nullable=False)
+#    telmobil = Column(String, nullable=False)
 
 class Vot(Baza): #creaza clasa Vot de tip Baza, in fapt tabela voturi in BD
                  #in cazul in care o tabela Vot lipseste, ea va fi creata prinexecutia acestui modul,

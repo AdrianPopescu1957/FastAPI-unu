@@ -58,7 +58,7 @@ if config.config_file_name is not None:
 #           # !! cursul foloseste SQLALchemy.v1, v depasita !!!
 #target_metadata = None
 from app.bazadedate1 import Baza
-target_metadata = Baza.
+target_metadata = Baza
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
