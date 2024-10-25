@@ -28,7 +28,7 @@ Nou:
 
 from fastapi import APIRouter
 from fastapi import Depends #trateaza conexiunile cu sesiunea de lucru cu DB prin ORM
-from bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
+from app.bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
 from sqlalchemy.orm import Session  #preia definitia sesiunii pe o BD din ORM-ul SQLAlchemy
 from fastapi import HTTPException #trateaza semnalele de eroare http, ! in loc de Response + status
 from fastapi import status #biblio pentru codurile standard http ale serverului, folosit cu HTTPException
