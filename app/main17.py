@@ -30,7 +30,7 @@ Versiune anterioara
 
 from fastapi import FastAPI #importata biblioteca necesara pentru crearea obiectelor de tip FastAPI
 from datetime import datetime  #modului operatiilor cu timpul; folosit pt test versiune server
-from rute import autentif4, useri5, articole7, voturi1  # rute separate spre functii diferite
+from app.rute import autentif4, useri5, articole7, voturi1  # rute separate spre functii diferite
 from fastapi.middleware.cors import CORSMiddleware
 
 
