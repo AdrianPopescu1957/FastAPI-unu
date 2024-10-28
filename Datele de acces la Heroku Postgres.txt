@@ -1,0 +1,20 @@
+Host
+c5flugvup2318r.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com
+
+Database
+ddcaat21ni922k
+
+User
+ue4iuvij15qs2g
+
+Port
+5432
+
+Password
+p39012fb21d60877c0b1df4fcd8eb8ef40b601422d1673fa5a40f656ae0d07fbb
+
+URI
+postgres://ue4iuvij15qs2g:p39012fb21d60877c0b1df4fcd8eb8ef40b601422d1673fa5a40f656ae0d07fbb@c5flugvup2318r.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/ddcaat21ni922k
+
+Heroku CLI
+heroku pg:psql postgresql-tetrahedral-86180 --app fastapi-unu
