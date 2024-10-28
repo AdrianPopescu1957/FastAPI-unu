@@ -33,7 +33,7 @@ from datetime import datetime
 
 from validari8 import CreUser, FiltruUser  #preia definitia modelelor de date din validari6.py
 from validari8 import ModifNume, ModifParola  #preia definitia modelelor de date din validari6.py
-from rute.oauth26 import iausercurent  #preia metoda idutilizator din oauth24.py 
+from oauth26 import iausercurent  #preia metoda idutilizator din oauth24.py 
 from bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
 from modele6 import User  #preia definitia modelelor de date din modele4.py
 from util1 import hash   #preia definitia pentru criptarea sirurilor de caractere

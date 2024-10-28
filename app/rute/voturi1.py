@@ -36,7 +36,7 @@ from fastapi import status #biblio pentru codurile standard http ale serverului,
 from bazadedate1 import get_db  #importa din bazadedateX.py metoda de open/close DB session
 from validari8 import CreVot #verificarea datelor de intrare pentru autentificare (=login)
 from modele6 import Post, Vot   #verificarea datelor trimise de client pentru votare
-from rute.oauth26 import iausercurent   #modulul pentru manipularea jetoanelor de acces
+from oauth26 import iausercurent   #modulul pentru manipularea jetoanelor de acces
 
 ruter = APIRouter(
             prefix= "/voturi",    #scurtata denumirea caii de acces inlocuid /voturi cu /
