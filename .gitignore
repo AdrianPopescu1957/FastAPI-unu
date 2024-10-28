@@ -1,7 +1,9 @@
 __pycache__
-venv\
-mediudelucru.env
-exe.bat
+fost-venv\
+Teste cu Postman\
+Datele de acces la Heroku Postgres.txt
+*.pdf
 e.bat
 er.bat
-*.pdf
+exe.bat
+mediudelucru.env
