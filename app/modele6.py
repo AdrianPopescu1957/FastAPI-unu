@@ -44,8 +44,8 @@ from sqlalchemy import Boolean  #importa definitia Bool de caractere compatibila
 from sqlalchemy import ForeignKey  #importa definitia cheilor straine pt relatii intre tabele
 from sqlalchemy.orm import Relationship  #importa definitia cheilor straine pt relatii intre tabele
 from datetime import datetime #modulul operatiilor cu timpul; folosit pt a inregistra momentul operatiunii
-from bazadedate1 import Baza  #importa din bazadedate.py obiectul (=clasa) Baza
-from bazadedate1 import masina  #importa din bazadedate.py masina
+from .bazadedate1 import Baza  #importa din bazadedate.py obiectul (=clasa) Baza
+from .bazadedate1 import masina  #importa din bazadedate.py masina
 
 
 
