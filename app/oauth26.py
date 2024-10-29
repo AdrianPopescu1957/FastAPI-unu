@@ -39,10 +39,10 @@ from fastapi import Depends, status, HTTPException  #necesare pt. creare punct f
 from fastapi.security import OAuth2PasswordBearer   #acelasi scop
 from sqlalchemy.orm import Session  #preia definitia sesiunii pe o BD din ORM-ul SQLAlchemy
 
-from bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
-from modele6 import User  #preia definitia modelelor de date din modele4.py
-from validari8 import DateJeton    #structura de date propriu-zise a jetonului
-from config import mediu     #preia definitiile variabilelor de mediu
+from .bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
+from .modele6 import User  #preia definitia modelelor de date din modele4.py
+from .validari8 import DateJeton    #structura de date propriu-zise a jetonului
+from .config import mediu     #preia definitiile variabilelor de mediu
 
 # CONSTANTE:    
 #CHEIESECRETA     = "abcdef0816242539abcdef34269723765abcdef90814376543abcdef876236bd"
