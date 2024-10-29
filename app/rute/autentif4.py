@@ -36,10 +36,10 @@ from fastapi.security.oauth2 import OAuth2PasswordRequestForm   #introduce formu
         # a nu mai trimite credentialele ca rind (raw) JSON, ci tabelar (form)
         # totodata, cimpurile credentialelor se vor numai username si password, standard FastAPI !!
 
-from .modele6 import User  #definitia modelelui de date pentru User din modele4.py
-from validari8 import UserLogin
-from util1 import compara   #preia definitia pentru verificarea hash parola
-from oauth26 import crearejetonacces   #modulul pentru manipularea jetoanelor de acces
+from ..modele6 import User  #definitia modelelui de date pentru User din modele4.py
+from ..validari8 import UserLogin
+from ..util1 import compara   #preia definitia pentru verificarea hash parola
+from ..oauth26 import crearejetonacces   #modulul pentru manipularea jetoanelor de acces
 
 ruter = APIRouter(
             tags= ['Autentificare'])  #grupate metodele pt autentificarea cererilor clientilor
