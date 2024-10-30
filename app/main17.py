@@ -46,7 +46,7 @@ app = FastAPI() #conecteaza navigatorul Internet cu sit-ul Internet =
 
 #adaugat middlware pentru Cross Origin Resouce Sharing
 #origins = ["http://localhost.tiangolo.com", "https://localhost.tiangolo.com",
-#    "http://localhost", "http://localhost:8080","https://www.google.com",]
+#    "http://localhost", "http://localhost:8080","https://www.google.com",]pip 
 origins = ["*"]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True,
     allow_methods=["*"], allow_headers=["*"],)

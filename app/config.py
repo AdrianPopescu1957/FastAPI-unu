@@ -48,11 +48,11 @@ class MediuLucru(BaseSettings):   #clasa variabilelor de mediu; folosesc denumir
     duratavalabilitatejeton: int
 
     class Config:
-        env_file = "..\mediudelucru.env"   #numele fisierului care contine variabilele de configurare
+        env_file = ".env"   #numele fisierului care contine variabilele de configurare
                                             #  in productie se va numi altfel
     
 mediu = MediuLucru()    #obiectul care contine valorile variabilelor de mediu (constantele mediului de lucru)
                         #pydantic va transforma in litere mari toate denumirile variabilelor de mediu
                         #   si va verifica tipul str pentru toate
 
-#print("[config.py] mediu.DB_username = ", mediu.DB_username, ", mediu.duratavalabilitatejeton = ", mediu.duratavalabilitatejeton )  #pt test
+print("[config.py] mediu.DB_username = ", mediu.DB_username, ", mediu.duratavalabilitatejeton = ", mediu.duratavalabilitatejeton )  #pt test

@@ -139,23 +139,48 @@ structura de module (=fisiere) este
             
 Implementeaza
     FastAPI What is CORS: Part #?? Python API Course de Sanjeev Thiyagarajan
+                                Alembic
+                                Heroku
 
 executat cu
-    app>uvicorn main17:app --reload
-    
+    FastAPI>alembic upgrade head                #local actualizarea structurii BD
+    FastAPI>uvicorn app.main17:app --reload     #local ansarea aplicatiei
+    FastAPI>heroku "alembic upgrade head"       #pe Heroku  actualizarea structurii BD
+    FastAPI>heroku "uvicorn app.main17:app"     #pe Heroku  lansarea aplicatiei
+
+pentru pregatire
+    git add --all                   #    actualizare GIThub copiere fisiere
+    git commit -m "commit ultimul"    #    actualizare GIThub  fixare fisiere
+    git push origin main    #    actualizare GIThub
+    git push heroku main    #    actualizare si instalare app pe Heroku
+    heroku ps:restart       #   pregatire app pe Heroku
+    heroku logs             #   tiparire pe terminal
+
 structura de module (=fisiere) este
 
     FastAPI
         cu
-            mediudelucru.env     #creat cu main 14 pentru variabilele de mediu de lucru
             .gitignore  #creat cu main 14 pentru ca de la incarcarea in GIT sa fie excluse 
                         #anumite fisiere si cataloage, de exemplu mediudelucru.env
+            alembic.ini         # creat cu main16 pt pregatire actualizare BD cu Alembic
+            Procfile    # creat cu main17 pentru Heroku
+            mediudelucru.env    #creat cu main 14 pentru variabilele de mediu de lucru
+            requirements.txt    # creat cu main17 pentru Heroku
+
+    FastAPI\Alembic
+        cu
+            env.py
+    FastAPI\Alembic\versions
+        cu
+            ????_creare_tabele.py
+            ??????_crearea_relatii.py
     FastAPI\app
         cu
             __init__.py     #de fata
+            oauth26.py    #introduce validarea jetoanelor  
             bazadedate1.py
             config.py       # introduce variabilele de mediu de lucru
-            main16.py
+            main17.py
             modele6.py      #introduce relatiile intre tabele
             requirements.txt #contine numele pachetelor python necesare dezvoltarii main17
             util1.py
@@ -166,7 +191,6 @@ structura de module (=fisiere) este
             __init__.py     #gol
             articole7.py    #modifcat fata de 6 pentru a adauga coloana voturi (JOIN)
             autentif4.py
-            oauth26.py    #introduce validarea jetoanelor  
             useri5.py
             voturi1.py     #introduce votarea
         
