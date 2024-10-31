@@ -89,7 +89,7 @@ class Vot(Baza): #creaza clasa Vot de tip Baza, in fapt tabela voturi in BD
     idart = Column (Integer, ForeignKey("posts.id", ondelete="CASCADE"), primary_key=True)
 
 #creaza tabelele in Baza de pe masina; obligatoriu daca nu BD nu exista!!
-#Baza.metadata.create_all(bind=masina)
+Baza.metadata.create_all(bind=masina)
 #   !!este inutila in cazul in care BD dorita exista, de ex. cazul creerii/migrarii cu Alembic!! 
 
 metadata=MetaData()
