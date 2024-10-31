@@ -56,15 +56,15 @@ async def iadinusers(db:Session = Depends(get_db)):
     return inreg  #zice ca raspunsul este mai curat astfel
 '''
 ''' 
-
+print('[useri5] @ruter.post("/", status_code= status.HTTP_201_CREATED, response_model=FiltruUser)')
 # 7. Creaza un utilizator nou inregistrind in tabela users a BD PostgreSQL 
 #       cu ORM-ul SQLAlchemy, copiat din creare nou articol de publicat
 @ruter.post("/", status_code= status.HTTP_201_CREATED, response_model=FiltruUser)
                 #si filtreaza raspunsul catre client
 async def creazauser(inreg:CreUser, db:Session = Depends(get_db)):
-    #print ("sint creaza user, parola primita este", inreg.parola) #pt test
+    print ("[useri5] sint creaza user, parola primita este", inreg.parola) #pt test
     inreg.parola = hash (inreg.parola)  #cripteaza cimpul parola cu o functie de tip hash
-    #print ("sint creaza user, parola criptata este", inreg.parola) #pt test
+    print ("[useri5] sint creaza user, parola criptata este", inreg.parola) #pt test
     inreg = User (**inreg.dict()) #excelent, sintaxa speciala echivalenta!!
 # !! trebuie tratat cazul in care se incearca crearea unui user deja existent !!
 #       as folosi codul de la UPDATE articol

@@ -78,6 +78,7 @@ app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True
 #
 
 app.include_router(articole7.ruter)  #ruta spre caile de operare a articolelor (posts)
+print('[main17] app.include_router(useri5.ruter)')
 app.include_router(useri5.ruter)  #ruta spre caile de operare a utilizatorilor (user-i)
 app.include_router(autentif4.ruter)  #ruta spre metodele login (JWT bearer)
 app.include_router(voturi1.ruter)  #ruta spre metodele pentru votare (voturi)
