@@ -58,7 +58,7 @@ from sqlalchemy.orm import sessionmaker             #importa "creatorul" de sesi
 from sqlalchemy import create_engine        #importa creatorul de masini (servere)
 from sqlalchemy.orm import declarative_base #importa creatorul de BD
 from sqlalchemy.orm import sessionmaker     #importa creatorul de sesiuni cu BD
-from config import mediu     #stabilirea valori pentru mediul de lucru (nou din v1)
+from .config import mediu     #stabilirea valori pentru mediul de lucru (nou din v1)
 
 #sintaxa comenzii URL la BD PostgreSQL:
 # SQLALCHEMY_DATABASE_URL = 
