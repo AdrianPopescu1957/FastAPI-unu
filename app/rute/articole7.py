@@ -39,11 +39,11 @@ from typing import Optional #introduce variabile optionale
 from sqlalchemy.orm import Session  #preia definitia sesiunii pe o BD din ORM-ul SQLAlchemy
 from sqlalchemy import func #preia functii diverse precum COUNT
 
-from ..validari8 import CreArticol, FiltruArticol, FiltruArticolCuVot, ModifArticol
+from validari8 import CreArticol, FiltruArticol, FiltruArticolCuVot, ModifArticol
     #preia definitia modelelor de date (schemelor de validare) din validari5.py
-from ..bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
-from ..modele6 import Post,Vot  #preia definitia modelelor de date din modele4.py
-from ..oauth26 import iausercurent  #preia metoda idutilizator din oauth21.py 
+from bazadedate1 import get_db  #importa din bazadedate.py metoda de open/close DB session
+from modele6 import Post,Vot  #preia definitia modelelor de date din modele4.py
+from oauth26 import iausercurent  #preia metoda idutilizator din oauth21.py 
 
 #s-a inlocuit din v9 obiectul app de tip FastAPI din main.py cu un obiect de acelasi tip apelabil
 #  dintr-o pozitie superioara a ierarhiei de fisiere (module py)

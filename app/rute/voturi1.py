@@ -33,10 +33,10 @@ from sqlalchemy.orm import Session  #preia definitia sesiunii pe o BD din ORM-ul
 from fastapi import HTTPException #trateaza semnalele de eroare http, ! in loc de Response + status
 from fastapi import status #biblio pentru codurile standard http ale serverului, folosit cu HTTPException
 
-from ..bazadedate1 import get_db  #importa din bazadedateX.py metoda de open/close DB session
-from ..validari8 import CreVot #verificarea datelor de intrare pentru autentificare (=login)
-from ..modele6 import Post, Vot   #verificarea datelor trimise de client pentru votare
-from ..oauth26 import iausercurent   #modulul pentru manipularea jetoanelor de acces
+from bazadedate1 import get_db  #importa din bazadedateX.py metoda de open/close DB session
+from validari8 import CreVot #verificarea datelor de intrare pentru autentificare (=login)
+from modele6 import Post, Vot   #verificarea datelor trimise de client pentru votare
+from oauth26 import iausercurent   #modulul pentru manipularea jetoanelor de acces
 
 ruter = APIRouter(
             prefix= "/voturi",    #scurtata denumirea caii de acces inlocuid /voturi cu /

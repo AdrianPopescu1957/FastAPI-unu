@@ -48,7 +48,7 @@ class MediuLucru(BaseSettings):   #clasa variabilelor de mediu; folosesc denumir
     duratavalabilitatejeton: int
 
     class Config:
-        env_file = ".env"   #numele fisierului care contine variabilele de configurare
+        env_file = "..\mediuldelucru.env"   #numele fisierului care contine variabilele de configurare
                                             #  in productie se va numi altfel
     
 mediu = MediuLucru()    #obiectul care contine valorile variabilelor de mediu (constantele mediului de lucru)
